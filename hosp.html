@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <title>Pizza • Cardapin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .cover {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
+
+    .header {
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 150px;
+      height: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .contact li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .contact a {
+      color: black;
+      font-size: 24px;
+    }
+
+    .header-content h3 {
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .header-content p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .time-open {
+      display: flex;
+      align-items: center;
+      color: green;
+      margin-bottom: 20px;
+    }
+
+    .about-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .about-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .search {
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search input {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .btn-search {
+      background-color: #007bff;
+      padding: 10px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-left: 5px;
+      border-radius: 5px;
+    }
+
+    .btn-search:hover {
+      background-color: #0056b3;
+    }
+
+    .app-cat {
+      margin-bottom: 20px;
+    }
+
+    .simple-divisor h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-list {
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-item span {
+      font-size: 16px;
+      color: #007bff;
+    }
+
+    .fixed-menu {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+
+    .fixed-menu .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .fixed-menu button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .fixed-menu button h5 {
+      margin-top: 5px;
+    }
+
+    .fixed-menu .cart-btn-icon {
+      font-size: 24px;
+    }
+
+    .fixed-menu button:hover {
+      color: #007bff;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cover" style="background-image:url('https://api.cardap.in/upload/file-f98fc5a1710163001069.jpeg')"></div>
+    <div class="header">
+      <div class="header-top">
+        <div class="logo" style="background-image:url('https://api.cardap.in/upload/file-df46b991710163001069.jpeg'), linear-gradient(90deg, #fff, #fff)"></div>
+        <ul class="contact">
+          <li><a href="https://facebook.com.terra" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg></a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a></li>
+          <li><a href="https://facebook.com.br" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.9 0-184.9zM398.8 388c-6.5 16.4-19.1 29-35.5 35.5-24.6 9.8-82.9 7.6-110.3 7.6s-85.7 2.1-110.3-7.6c-16.4-6.5-29-19.1-35.5-35.5-9.8-24.6-7.6-82.9-7.6-110.3s-2.1-85.7 7.6-110.3c6.5-16.4 19.1-29 35.5-35.5 24.6-9.8 82.9-7.6 110.3-7.6s85.7-2.1 110.3 7.6c16.4 6.5 29 19.1 35.5 35.5 9.8 24.6 7.6 82.9 7.6 110.3s2.2 85.7-7.6 110.3z"></path></svg></a></li>
+          <li><a href="https://wa.me/+5511934729260?text=Olá%2C+estou+no+seu+site%2C+você+pode+me+ajudar%3F" target="_blank" rel="noopener noreferrer nofollow"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C338 54.2 282.7 32 224.1 32 126.8 32 48 110.8 48 208.1c0 39.4 11.6 77.6 33.7 110.3L32 480l165.7-49.5c31.1 17 66 25.8 102.2 25.8h.1c97.3 0 176.1-78.8 176.1-176 0-58.6-22.1-113.9-65-156.9zM224.1 408.4c-29.5 0-58.2-7.9-83.4-22.9l-5.9-3.5-98.8 29.6 29.6-98.8-3.5-5.9C56 282.2 48 253.4 48 223.9 48 141 117.2 71.8 200.1 71.8c42.9 0 83.3 16.7 113.7 47.1 30.4 30.4 47.1 70.8 47.1 113.7 0 82.9-69.2 152.1-152.1 152.1zM322.7 286c-5.6-2.8-33-16.2-38.2-18.1-5.1-1.9-8.8-2.8-12.5 2.8s-14.4 18.1-17.6 21.9-6.4 4.2-12 1.4c-33.5-16.7-55.5-29.9-77.9-68.1-5.9-10.1 5.9-9.3 16.7-30.9 1.9-3.9.9-7.2-.5-10.1s-12.5-30.2-17.1-41.5c-4.5-10.9-9.1-9.3-12.5-9.5-3.2-.2-7-.2-10.7-.2-3.9 0-10.1 1.4-15.4 7.2s-20.2 19.7-20.2 48.1 20.7 55.7 23.6 59.6c2.8 3.9 40.7 62.1 98.4 87.1 13.7 5.9 24.4 9.3 32.7 11.9 13.7 4.3 26.2 3.7 36.1 2.2 11-1.7 33.9-13.8 38.7-27.1 4.8-13.2 4.8-24.5 3.4-27.1-1.4-2.3-5.1-3.7-10.7-6.5z"></path></svg></a></li>
+        </ul>
+      </div>
+      <div class="header-content">
+        <h3>Pizza</h3>
+        <p>A pizza tradicional do Rio.</p>
+        <div>
+          <div class="time-open"><strong>Estamos abertos</strong></div>
+          <button class="about-btn">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <input placeholder="Buscar produto" type="text"/>
+      <button class="btn-search">Buscar</button>
+    </div>
+    <div class="app-cat">
+      <div class="simple-divisor">
+        <h3>Pizza Salgada</h3>
+      </div>
+      <div class="product-list">
+        <div class="product-item">
+          <h3>Pizza Portuguesa</h3><span>R$ 99.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-menu">
+    <div class="container">
+      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M302 334.7c-1.7 1.5-3.5 2.9-5.4 4.2-4.7 3.3-9.7 6.5-14.6 9.4-5.7 3.4-11.5 6.5-17.5 9.3 0 .1-.1.1-.2.1-33.3 15.8-68.8 24.3-103.5 24.3-38.4 0-78.2-9.4-114.6-27.9-8.4-4.2-16.5-8.9-24.4-14.1C9.4 324.9 0 313.2 0 300.2V74.8c0-14.1 9.4-25.7 26.8-35.4C64.3 13.5 111.6 0 160.9 0c43.1 0 85.1 9.4 120.7 27.5 10.5 5.3 20.6 11.1 30.4 17.5 4.4 2.9 8.8 5.9 13.1 9 12.5 8.7 19.8 18.3 19.8 28.3v255.2c0 1.8-.2 3.7-.6 5.5-.3 1.5-.9 2.9-1.5 4.4-.6 1.5-1.2 2.9-1.9 4.4-.2.3-.3.6-.4.9-1.6 3.4-3.5 6.9-6 10.5zm-41.5-43.2c.9-.5 1.7-1 2.6-1.5 4.2-2.4 8.2-5 12.2-7.7 2.5-1.7 4.9-3.4 7.3-5.2V98.8c-1.7 1.2-3.4 2.3-5.1 3.4-2.4 1.6-4.9 3.2-7.3 4.7-9.4 5.9-18.9 11.2-28.8 15.8-30.9 14.2-66.8 21.6-103.4 21.6-45.7 0-89.4-11.5-120.4-32-2.4-1.5-4.7-3.1-6.9-4.7V297c1.8 1.3 3.7 2.5 5.6 3.8 6.2 4 12.7 7.8 19.6 11.3 32.2 16 68.5 24.5 103.5 24.5 31.5 0 63.2-6.9 91.1-19.5zm-5.4-167.4v34.5c-35.4-17.7-79.2-17.7-114.6 0v-34.5c35.4-17.7 79.2-17.7 114.6 0zm0 63v34.5c-35.4-17.7-79.2-17.7-114.6 0v-34.5c35.4-17.7 79.2-17.7 114.6 0z"></path></svg><h5>Menu</h5></button>
+      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V118h352v308c0 3.3-2.7 6-6 6zm-277-92h184c6.6 0 12-5.4 12-12v-8c0-6.6-5.4-12-12-12H117c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12zm0-96h184c6.6 0 12-5.4 12-12v-8c0-6.6-5.4-12-12-12H117c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12zm0-96h184c6.6 0 12-5.4 12-12v-8c0-6.6-5.4-12-12-12H117c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12z"></path></svg><h5>Pedidos</h5></button>
+      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M313.6 304h-16.7c-12.8 0-24.7 6.9-31.1 17.9L224 377l-41.7-55.1c-6.4-11-18.3-17.9-31.1-17.9h-16.7C113 304 96 321 96 342.4V432c0 26.5 21.5 48 48 48h160c26.5 0 48-21.5 48-48v-89.6c0-21.4-17-38.4-38.4-38.4zm-77.1 155.4c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path></svg><h5>Favoritos</h5></button>
+      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M576 216v16c0 13.3-10.7 24-24 24h-8v168c0 39.8-32.2 72-72 72H104c-39.8 0-72-32.2-72-72V256H24c-13.3 0-24-10.7-24-24v-16c0-13.3 10.7-24 24-24h8V104c0-39.8 32.2-72 72-72h128l16-32h128l16 32h128c39.8 0 72 32.2 72 72v88h8c13.3 0 24 10.7 24 24zM96 256v136c0 13.2 10.8 24 24 24h336c13.2 0 24-10.8 24-24V256H96z"></path></svg><h5>Carrinho</h5></button>
+      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M500.3 96.3C494.1 86.1 483.1 80 471 80H340.1L304.6 8.9C299.5-0.3 290.2-5.5 280 2.7 269.7 8.9 264.5 20.2 272.7 30.5l21.8 42.3H187.5l21.8-42.3c8.2-10.3 3-21.6-7.3-27.8-10.3-8.2-21.6-3-27.8 7.3l-35.5 71.1H41C28.9 80 17.9 86.1 11.7 96.3S1.4 115.9 5.5 127l49.7 153c6.8 21.3 26.5 36 49.5 36h12.8c-3.7 9.8-6.1 20.3-6.1 32 0 48.6 39.4 88 88 88 36.4 0 68.6-22.2 81.9-55.3 1.7 0 3.3.3 5.1.3H320c1.7 0 3.4-.3 5.1-.3 13.3 33.1 45.5 55.3 81.9 55.3 48.6 0 88-39.4 88-88 0-11.7-2.3-22.2-6.1-32h12.8c23 0 42.7-14.7 49.5-36l49.7-153c4.2-11.1 2.5-23.4-3.7-33.7zM132.3 368c0-23.2 18.8-42 42-42s42 18.8 42 42-18.8 42-42 42-42-18.8-42-42zm176-42c23.2 0 42 18.8 42 42s-18.8 42-42 42-42-18.8-42-42 18.8-42 42-42zM66.7 256L41 160h430l-25.7 96H66.7z"></path></svg><h5>Carrinho</h5></button>
+    </div>
+  </div>
+</body>
+</html>
